@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+	background-image: linear-gradient(to right, #051e29, #8d8c87); 
+}
+.wrapper {
+	perspective: 900px;
+}
+.card {
+	text-align: center;
+	transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+	transform-style: preserve-3d;
+}
+.wrapper, .card {
+	height: 450px;
+	max-width: 450px;
+	margin: 0 auto;
+	position: relative;
+}
+.wrapper:hover .card {
+	transform: rotateY(180deg);
+}
+.front, .back {
+	width: 450px;
+	position: relative;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.front {
+	cursor: pointer;
+	height: 100%;
+	width: 450px;
+	background-image: url(../images/Demonying.png);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 50px;
+	background-size: cover;
+	background-position: center center;
+}
+.back {
+	transform: rotateY(180deg);
+	position: absolute;
+	border-radius: 50px;
+	height: 450px;
+	background: #fff;
+}
+h1{
+    color: #151b1b;
+    margin-bottom: 0.5em;
+    padding-top: 50px;
+}
+.container .box{
+    width: 100%;
+    display: flex;
+}
+.box div{
+    width: 100%;
+}
+select{
+    width: 95%;
+    height: 40px;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+    background: #1b1b1d;
+    color: white;
+    margin: 0.2em 0;
+    padding: 0 1em;
+    border-radius: 10px;
+    border: none;
+}
+input{
+    width: 95%;
+    height: 40px;
+    font-size: 1em;
+    margin: 0.2em 0;
+    border-radius: 10px;
+    border: none;
+    background: #edeef7;
+    outline: none;
+    padding: 0 1em;
+}
+.btn{
+    width: 95%;
+    height: 40px;
+    background: #364547;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0.5em 0;
+}

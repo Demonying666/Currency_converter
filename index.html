@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Currency Convertion</title>
+</head>
+<body>
+    
+        <div class="wrapper">
+            <div class="card" id="card" onmouseover="refreshPage">
+                <div class="front"></div>
+                <div class="back">
+                    <h1>Currency Exchange Rate</h1>
+                    <div class="currency_exchange">
+                        <div class="number_section">
+                            <select name="currency" class="currency"></select>
+                            <input type="number" id="number_box" placeholder="Enter Currency">
+                        </div>
+                        <div class="answer_section">
+                            <select name="currency" class="currency"></select>
+                            <input type="text" id="answer_box" placeholder="Result" disabled>
+                        </div>
+                    </div>
+                        <button class="btn" id="btn">Convert</button>
+                </div>
+            </div>    
+        </div>
+    
+    
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
