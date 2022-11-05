@@ -21,7 +21,7 @@ body{
 }
 .wrapper, .card {
 	height: 450px;
-	max-width: 450px;
+	max-width: 350px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -39,7 +39,7 @@ body{
 .front {
 	cursor: pointer;
 	height: 100%;
-	width: 450px;
+	width: 350px;
 	background-image: url(../images/Demonying.png);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -52,6 +52,7 @@ body{
 	position: absolute;
 	border-radius: 50px;
 	height: 450px;
+	width: 350px;
 	background: #fff;
 }
 h1{
